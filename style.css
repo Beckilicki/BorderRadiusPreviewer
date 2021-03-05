@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100wv;
+    height: 100vh;
+    display: flex;
+}
+
+.card {
+    align-self: center;
+    margin: auto;
+    display: grid;
+    grid-template-areas: 'title title title' 'top-left . top-right' 'bottom-left . bottom-right';
+    gap: 1rem;
+    background-color: lightgray;
+    padding: 2rem;
+    border: 1px solid black;
+    box-shadow: 0.5rem 0.5rem 0.5rem rgba(0, 0, 0, 0.8);
+}
+
+.title {
+    grid-area: title;
+    justify-self: center;
+    align-self: center;
+}
+
+.btn {
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    align-self: center;
+    background-color: white;
+    box-shadow: 0.5rem 0.5rem 0.5rem rgba(0, 0, 0, 0.8);
+    transition: all 0.5s ease-in-out;
+    padding: 1rem;
+}
+
+.btn-top-left {
+    grid-area: top-left;
+    border-top-left-radius: 1rem;
+}
+
+.btn-top-right {
+    grid-area: top-right;
+    border-top-right-radius: 1rem;
+}
+
+.btn-bottom-left {
+    grid-area: bottom-left;
+    border-bottom-left-radius: 1rem;
+}
+
+.btn-bottom-right {
+    grid-area: bottom-right;
+    border-bottom-right-radius: 1rem;
+}
+
+.clipboard {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.clipboard > h2 {
+    text-align: center;
+}
+
+.btn-copy {
+    border-radius: 50%;
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+}

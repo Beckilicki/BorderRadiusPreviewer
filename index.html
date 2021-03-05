@@ -4,7 +4,44 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./style.css"></link>
         <title>Border radius previewer</title>
     </head>
-    <body></body>
+    <body>
+        <div class="card">
+            <h1 class="title">
+                Border radius previewer
+            </h1>
+            <div class="btn btn-top-left">
+                <span>
+                    Top left border
+                </span>
+                <input>
+            </div>
+            <div class="btn btn-top-right">
+                <span>
+                    Top right border
+                </span>
+                <input>
+            </div>
+            <div class="btn btn-bottom-left">
+                <span>
+                    Bottom left border
+                </span>
+                <input>
+             </div>
+            <div class="btn btn-bottom-right">
+                <span>
+                    Bottom right border
+                </span>
+                <input>
+            </div>
+        </div>
+        <div class="clipboard">
+            <h2>Clipboard</h2>
+            <textarea cols="40" rows="20"></textarea>
+            <button class="btn btn-copy">Copy</button>
+        </div>
+        <script src="./index.js"></script>
+    </body>
 </html>
